@@ -50,6 +50,7 @@ class apache::mod::php (
     $_package_name = undef
   }
 
+  # Controls php version and libphp prefix
   $_lib = "${libphp_prefix}${php_version}.so"
   $_php_major = regsubst($php_version, '^(\d+)\..*$', '\1')
 
